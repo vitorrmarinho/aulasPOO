@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Tipos primitivos ===");
+       /* System.out.println("=== Tipos primitivos ===");
         TiposPrimitivos.main(args);
 
         System.out.println("\n=== Conversão de tipos ===");
@@ -22,7 +22,18 @@ public class Main {
         ComparacaoStrings.main(args);
 
         System.out.println("\n=== Cache de Integer ===");
-        CacheDeInteger.main(args);
-    }
-}
+    CacheDeInteger.main(args);*/
 
+    Televisao tv = new Televisao(); 
+    
+    tv.aumentarVolume();
+    tv.escolherCanal(50);
+    tv.mudarCanal(1);
+    tv.mudarCanal(-1);
+    tv.ligar();
+    tv.aumentarVolume();
+    tv.escolherCanal(50);
+    tv.mudarCanal(1);
+
+}
+}
