@@ -3,13 +3,14 @@ public class Televisao {
     int canal = 1;
     int volume = 0;
 
-    public void ligar(){
-        System.out.println("Está ligada");
-        ligada = true;
-    }
-      public void desligar(){
-        System.out.println("Está desligada");
-        ligada = false;
+    public void ligarDesligar(){
+        ligada = !ligada;
+        if(ligada == true){
+            System.out.println("A Tv está ligada");
+        }
+        else{
+            System.out.println("A tv está desligada");
+        }
     }
     public void aumentarVolume(){
         if (ligada == true) {
@@ -19,7 +20,6 @@ public class Televisao {
         else {
             System.out.println("Precisa ligar a tv");
         }
-    
     }
     public void diminuirVolume(){
         if (ligada == true){
@@ -43,7 +43,6 @@ public class Televisao {
       public void diminuirCanal (){
         if(ligada == true){
         // 1 para aumentar|| -1 para diminuir
-        canal --;
         System.out.println("Canal atual" + canal);
         }
         else{

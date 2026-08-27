@@ -28,12 +28,12 @@ public class Main {
     
     tv.aumentarVolume();
     tv.escolherCanal(50);
-    tv.mudarCanal(1);
-    tv.mudarCanal(-1);
-    tv.ligar();
+    tv.aumentarCanal();;
+    tv.diminuirCanal();;
+    tv.ligarDesligar();
     tv.aumentarVolume();
     tv.escolherCanal(50);
-    tv.mudarCanal(1);
+    tv.aumentarCanal();
 
 }
 }
